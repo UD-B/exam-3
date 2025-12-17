@@ -112,5 +112,3 @@ function detectDangerousCalls(){
     const dangerousCalls = records.filter((obj) => obj.content.includes("death" || "knife" || "bomb" || "attack"))
     console.log(dangerousCalls);
 }
-
-detectDangerousCalls()
