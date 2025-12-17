@@ -108,3 +108,9 @@ function getTranscriptionsleArray() {
 export const records = await getTranscriptionsleArray()
 
 
+function detectDangerousCalls(){
+    const dangerousCalls = records.filter((obj) => obj.content.includes("death" || "knife" || "bomb" || "attack"))
+    console.log(dangerousCalls);
+}
+
+detectDangerousCalls()
